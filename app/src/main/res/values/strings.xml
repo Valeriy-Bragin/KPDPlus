@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">KPD+</string>
+    <string name="holds">Holds</string>
+    <string name="holds_colon">Holds:</string>
+    <string name="name">Name</string>
+    <string name="brand">Brand</string>
+    <string name="holder">Holder</string>
+    <string name="code">Code</string>
+    <string name="date_created">Date created</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_brand">Enter brand</string>
+    <string name="enter_holder_name">Enter holder name</string>
+    <string name="enter_code">Enter code</string>
+    <string name="all">All</string>
+    <string name="free">Free</string>
+    <string name="held">Held</string>
+    <string name="tool_added">Tool added</string>
+    <string name="tool_edited">Tool edited</string>
+    <string name="done">Done</string>
+    <string name="there_already_is_a_tool_with_this_code">There already is a tool with this code</string>
+    <string name="there_is_no_tool_with_this_code">There is no tool with this code</string>
+    <string name="tool_name_cannot_be_blank">Tool name cannot be blank</string>
+    <string name="edit">Edit</string>
+    <string name="no_tool_yet">No tool yet</string>
+
+    <string name="tools">Tools</string>
+    <string name="tool">Tool</string>
+    <string name="scan_qr">Scan QR code</string>
+    <string name="new_tool">New Tool</string>
+    <string name="edit_tool">Edit tool</string>
+
+    <string name="camera_permission_granted">Camera permission granted</string>
+    <string name="camera_permission_denied">Camera permission denied</string>
+
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_date_created">Sort by date created</string>
+    <string name="sort">Sort</string>
+    <string name="search">Search</string>
+
+    <string name="select_action">Select Action</string>
+    <string name="select_photo_from_gallery">Select photo from Gallery</string>
+    <string name="capture_photo_from_camera">Capture photo from Camera</string>
+</resources>

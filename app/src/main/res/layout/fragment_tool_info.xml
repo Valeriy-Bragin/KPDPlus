@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.toolinfo.ToolInfoFragment">
+
+    <ImageView
+        android:id="@+id/image_view_tool"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_tool"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/text_view_name"
+            style="@style/AppTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="Android Phone Realme"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_name"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/brand" />
+
+        <TextView
+            android:id="@+id/text_view_brand"
+            style="@style/AppTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="Realme"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_holder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_brand"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/holder" />
+
+        <TextView
+            android:id="@+id/text_view_holder_name"
+            style="@style/AppTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="Marcus Aurelius"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_holder_name"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/code" />
+
+        <TextView
+            android:id="@+id/text_view_code"
+            style="@style/AppTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="2r4g7jd"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_date_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_code"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/date_created" />
+
+        <TextView
+            android:id="@+id/text_view_date_created"
+            style="@style/AppTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="25.10.2022"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

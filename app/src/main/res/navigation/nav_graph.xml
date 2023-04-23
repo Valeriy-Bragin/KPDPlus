@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/toolsFragment">
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.meriniguan.kpdplus.screens.tools.ToolsFragment"
+        android:label="@string/tools"
+        tools:layout="@layout/fragment_tools" >
+        <action
+            android:id="@+id/action_toolsFragment_to_QRCodeScannerFragment"
+            app:destination="@id/QRCodeScannerFragment" />
+        <action
+            android:id="@+id/action_toolsFragment_to_toolInfoFragment"
+            app:destination="@id/toolInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRCodeScannerFragment"
+        android:name="com.meriniguan.kpdplus.screens.qrcodescanner.QRCodeScannerFragment"
+        android:label="@string/scan_qr"
+        tools:layout="@layout/fragment_qr_code_scanner" >
+        <action
+            android:id="@+id/action_QRCodeScannerFragment_to_toolInfoFragment"
+            app:destination="@id/toolInfoFragment"
+            app:popUpTo="@id/QRCodeScannerFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_QRCodeScannerFragment_to_addEditToolFragment"
+            app:destination="@id/addEditToolFragment"
+            app:popUpTo="@id/QRCodeScannerFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="isAdding"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolInfoFragment"
+        android:name="com.meriniguan.kpdplus.screens.toolinfo.ToolInfoFragment"
+        android:label="@string/tool"
+        tools:layout="@layout/fragment_tool_info" >
+        <action
+            android:id="@+id/action_toolInfoFragment_to_addEditToolFragment"
+            app:destination="@id/addEditToolFragment" />
+        <argument
+            android:name="tool"
+            app:argType="com.meriniguan.kpdplus.data.room.Tool"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+        <argument
+            android:name="code"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addEditToolFragment"
+        android:name="com.meriniguan.kpdplus.screens.addedittool.AddEditToolFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_edit_tool" >
+        <argument android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="tool"
+            app:argType="com.meriniguan.kpdplus.data.room.Tool"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+</navigation>
